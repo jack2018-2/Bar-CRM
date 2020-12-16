@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--<TabControl>
+            <TabItem Header="Коктейли" Grid.Row="0">
+                <ComboBox DisplayMemberPath="name" Name="CocktailsList" Text="Начните вводить имя коктейля" Height="30" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10, 10, 10, 10" IsEditable="True" StaysOpenOnEdit="True"></ComboBox>
+            </TabItem>
+            <TabItem Header="Инструменты" Grid.Row="0">
+                <ComboBox DisplayMemberPath="name" Name="ToolsList" Text="Начните вводить имя инструмента" Height="25" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10, 10, 10, 10" IsEditable="True" StaysOpenOnEdit="True"></ComboBox>
+            </TabItem>
+        </TabControl>-->
+
+        <Button Content="Поиск коктейля" Grid.Column="1" HorizontalAlignment="Right" Margin="0,40,9.6,9.6" VerticalAlignment="Center" Width="116" Height="25" Click="CocktailsSearch"/>
+        <TextBox Name="cocktailName" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" Height="25" Width="150" VerticalAlignment="Top"/>
+        <ComboBox Name="cocktailType" Grid.Column="1" HorizontalAlignment="Left" Margin="24.8,38,0,10" Width="150" Height="25"/>
+        <ComboBox x:Name="cocktailBase" DisplayMemberPath="name" Grid.Column="1" HorizontalAlignment="Left" Margin="217.8,38,0,7.4" Width="150" Height="25"/>
+        <!--<ComboBox x:Name="cocktailBase" DisplayMemberPath="name" Grid.Column="1" HorizontalAlignment="Left" Margin="209.8,38,0,10.4" Width="150"/>-->
+
+        <ListView Name="cocktailView" HorizontalAlignment="Left" Height="auto"  Margin="10,10,0,0" Grid.Row="1" Width="150" VerticalAlignment="Top" SelectionChanged="cocktailView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=name}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Имя коктейля" VerticalAlignment="Top" Height="22" Width="143"/>
+        <TextBlock HorizontalAlignment="Left" Margin="31.8,10,0,0" TextWrapping="Wrap" Text="Вкус" VerticalAlignment="Top" Height="22" Width="143" Grid.Column="1"/>
+        <TextBox Name="selectedName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="24.8,9.6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="selectedReceipt" Grid.Column="1" HorizontalAlignment="Left" Height="88" Margin="24.8,50.6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="520"/>
+        <Button Content="Добавить новый коктейль" Grid.Column="1" HorizontalAlignment="Left" Margin="172.8,320.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182" Click="AddCocktail"/>
+        <Button Content="Добавить новый ингридиент" Grid.Column="1" HorizontalAlignment="Left" Margin="359.8,320.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="167" Click="AddIngridient"/>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="224.8,10,0,0" TextWrapping="Wrap" Text="База коктейля" VerticalAlignment="Top" Height="22" Width="143" Grid.Column="1"/>
+        <!--<TextBlock HorizontalAlignment="Left" Margin="209.8,10,0,0" TextWrapping="Wrap" Text="База" VerticalAlignment="Top" Height="22" Width="143" Grid.Column="1"/>-->
+
+    </Grid>
+</Window>
