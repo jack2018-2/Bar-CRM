@@ -23,4 +23,6 @@ namespace WpfApp3
         //public enum1 taste { get; set; }
         public string taste { get; set; }
     }
+
+    
 }

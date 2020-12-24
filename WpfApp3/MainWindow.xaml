@@ -30,7 +30,7 @@
         <ComboBox x:Name="cocktailBase" DisplayMemberPath="name" Grid.Column="1" HorizontalAlignment="Left" Margin="220,30,0,0" Width="150" Height="25" VerticalAlignment="Top"/>
         <!--<ComboBox x:Name="cocktailBase" DisplayMemberPath="name" Grid.Column="1" HorizontalAlignment="Left" Margin="209.8,38,0,10.4" Width="150"/>-->
 
-        <ListView Name="cocktailView" HorizontalAlignment="Left" Height="auto"  Margin="10,10,0,0" Grid.Row="1" Width="170" VerticalAlignment="Top" SelectionChanged="cocktailView_SelectionChanged">
+        <ListView Name="cocktailView" HorizontalAlignment="Left" Height="auto"  Margin="10,10,0,10" Grid.Row="1" Width="170" VerticalAlignment="Top" SelectionChanged="cocktailView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=name}"/>
@@ -39,7 +39,7 @@
         </ListView>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Имя коктейля" VerticalAlignment="Top" Height="22" Width="143"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,10,0,0" TextWrapping="Wrap" Text="Вкус" VerticalAlignment="Top" Height="22" Width="145" Grid.Column="1"/>
-        <TextBox Name="selectedName" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="25,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="selectedName" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="25,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
         <TextBox x:Name="selectedReceipt" MaxHeight="500" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="25,50,0,50" Grid.Row="1" TextWrapping="Wrap" Text="" Width="520"/>
         <Button Content="Добавить новый коктейль" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="1" Margin="10,10,10,10" VerticalAlignment="Bottom" Width="182" Click="AddCocktail"/>
         <Button Content="Добавить новый ингридиент" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" Margin="10,10,10,10" VerticalAlignment="Bottom" Width="167" Click="AddIngridient"/>
