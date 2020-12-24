@@ -10,21 +10,21 @@
 
 
         <Button Content="Добавить" HorizontalAlignment="Left" Margin="672,53,0,0" VerticalAlignment="Top" Width="81" Click="Button_Click" Height="23"/>
-        <TextBox Name="name" HorizontalAlignment="Left" Height="23" Margin="37,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="description" HorizontalAlignment="Left" Height="23" Margin="186,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="degree" HorizontalAlignment="Left" Height="23" Margin="346,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="volume" HorizontalAlignment="Left" Height="23" Margin="509,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="name" HorizontalAlignment="Left" Height="23" Margin="37,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="description" HorizontalAlignment="Left" Height="23" Margin="186,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="degree" HorizontalAlignment="Left" Height="23" Margin="346,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="volume" HorizontalAlignment="Left" Height="23" Margin="509,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="47,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Имя "/><Run Text="коктейля"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="203,34,0,0" TextWrapping="Wrap" Text="Описание" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="368,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Градус"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="528,37,0,0" TextWrapping="Wrap" Text="Объем" VerticalAlignment="Top"/>
-        <TextBox x:Name="receipt" HorizontalAlignment="Left" Height="23" Margin="37,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="receipt" HorizontalAlignment="Left" Height="23" Margin="37,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="47,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Рецепт"/>
-        <TextBox x:Name="group" HorizontalAlignment="Left" Height="23" Margin="193,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="group" HorizontalAlignment="Left" Height="23" Margin="193,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="203,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Тип"/>
         <ComboBox x:Name="taste" HorizontalAlignment="Left" Height="23" Margin="348,156,0,0" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="359,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Вкус"/>
-        <ComboBox x:Name="cocktailBase" DisplayMemberPath="name" HorizontalAlignment="Left" Height="23" Margin="507,156,0,0" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cocktailBase" DisplayMemberPath="name" HorizontalAlignment="Left" Height="23" Margin="507,156,0,0" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="518,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="База"/>
     </Grid>
 </Window>

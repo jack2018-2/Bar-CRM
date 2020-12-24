@@ -10,10 +10,10 @@
 
 
         <Button Content="Добавить" HorizontalAlignment="Left" Margin="672,53,0,0" VerticalAlignment="Top" Width="81" Click="Button_Click" Height="23"/>
-        <TextBox Name="name" HorizontalAlignment="Left" Height="23" Margin="37,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="degree" HorizontalAlignment="Left" Height="23" Margin="186,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="type" HorizontalAlignment="Left" Height="23" Margin="346,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="description" HorizontalAlignment="Left" Height="23" Margin="509,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="name" HorizontalAlignment="Left" Height="23" Margin="37,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="degree" HorizontalAlignment="Left" Height="23" Margin="186,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="type" HorizontalAlignment="Left" Height="23" Margin="346,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="description" HorizontalAlignment="Left" Height="23" Margin="509,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="47,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Имя "/><Run Text="ингридиента"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="203,34,0,0" TextWrapping="Wrap" Text="Градус" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="368,34,0,0" TextWrapping="Wrap" Text="Тип" VerticalAlignment="Top"/>

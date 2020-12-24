@@ -2,21 +2,14 @@
 using System.ComponentModel;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Drawing;
 using Npgsql;
 using System.Collections.ObjectModel;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
 
 namespace WpfApp3
 {
@@ -191,7 +184,7 @@ namespace WpfApp3
 
         public static void ConnectDB()
         {
-            var connect = "Server=127.0.0.1;Port=5432;User Id=postgres;Password=root;Database=cursework;";
+            var connect = "Server=localhost;Port=5432;User Id=postgres;Password=root;Database=cursework;";
             conn = new NpgsqlConnection(connect);
             conn.Open();
             //Console.WriteLine("Connected!");
@@ -216,6 +209,14 @@ namespace WpfApp3
             //var res = from elem in cocktails where elem.id == ((Cocktails)((ListBox)sender).SelectedItem).name select elem;
             selectedName.Text = ((Cocktails)((ListBox)sender).SelectedItem)?.name;
             selectedReceipt.Text = ((Cocktails)((ListBox)sender).SelectedItem)?.receipt;
+            /*using (var ms = new MemoryStream(((Cocktails)((ListBox)sender).SelectedItem)?.picture))
+            {
+                image.Source = System.Drawing.Image.FromStream(ms);
+            }*/
+            //BitmapSource bitmapSource = BitmapSource.Create(2, 2, 300, 300, PixelFormats.Indexed8, BitmapPalettes.Halftone8, ((Cocktails)((ListBox)sender).SelectedItem)?.picture, 2);
+
+            //image.Source = bitmapSource;
+
         }
 
         private void AddCocktail(object sender, RoutedEventArgs e)
