@@ -11,7 +11,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
 using System.Collections.Generic;
-
+//жопа
 namespace WpfApp3
 {
     /// <summary>
