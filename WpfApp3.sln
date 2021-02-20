@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp3", "WpfApp3\WpfApp3.csproj", "{33B9918C-16CB-42CF-8627-578833C33D69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WriterToDB", "..\WriterToDB\WriterToDB.csproj", "{6E23346D-0526-42B4-84D3-BAC5A8F81F14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "СocktailParser", "..\Bar\СocktailParser.csproj", "{542A3E23-665E-4C0F-9E29-EA052F778450}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{33B9918C-16CB-42CF-8627-578833C33D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33B9918C-16CB-42CF-8627-578833C33D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33B9918C-16CB-42CF-8627-578833C33D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E23346D-0526-42B4-84D3-BAC5A8F81F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E23346D-0526-42B4-84D3-BAC5A8F81F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E23346D-0526-42B4-84D3-BAC5A8F81F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E23346D-0526-42B4-84D3-BAC5A8F81F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542A3E23-665E-4C0F-9E29-EA052F778450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542A3E23-665E-4C0F-9E29-EA052F778450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542A3E23-665E-4C0F-9E29-EA052F778450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542A3E23-665E-4C0F-9E29-EA052F778450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
